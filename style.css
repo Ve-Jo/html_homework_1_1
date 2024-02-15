@@ -1,0 +1,45 @@
+table {
+  width: 800px;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+th,
+td {
+  border: 0px;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+td:first-child {
+  position: sticky;
+  left: 0;
+  background-color: #709bf8;
+  font-weight: bold;
+  z-index: 3;
+}
+
+tr:first-child th {
+  left: 0;
+  background-color: #709bf8;
+  z-index: 2;
+}
+
+tr:first-child th:first-child {
+  z-index: 3;
+}
+
+thead th:first-child {
+  color: transparent;
+  user-select: none;
+}
